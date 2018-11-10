@@ -15,6 +15,12 @@ public class SampleServer {
 
     @GetMapping("/")
     public String helloworld(){
+        try {
+            Thread.sleep(5000);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
         return "Hello World";
     }
 

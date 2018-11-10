@@ -6,6 +6,9 @@ ribbon:
     enabled: false
 
 zuul:
+  host:
+    connect-timeout-millis: 100
+    socket-timeout-millis: 4000
   routes:
     sample:
       url: http://localhost:8080
