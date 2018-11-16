@@ -13,12 +13,12 @@ public class SampleServer {
         SpringApplication.run(SampleServer.class, args);
     }
 
-    @GetMapping("/")
+    @GetMapping("/sample")
     public String helloworld(){
         return "Hello World";
     }
 
-    @GetMapping("/bye")
+    @GetMapping("/sample/bye")
     public String bye(){
         return "Good Bye";
     }
